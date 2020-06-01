@@ -6,9 +6,11 @@ import com.alfian.spring.model.SampleBean;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
 
 @SpringBootApplication
+@Import(SalahConfiguration.class)
 public class Configuration {
 
     @Bean(name = "1")
